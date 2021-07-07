@@ -1,0 +1,16 @@
+from random import *
+a = randint(1,100)
+count = 1
+#猜数字大小
+
+while (count < 10):
+    num = int(input("Enter a number :"))
+    if num > a:
+        print("大了！")
+        count = count + 1
+    elif num < a:
+        print("小了！")
+        count = count + 1
+    else:
+        print("答对了！")
+        break
